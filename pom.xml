@@ -7,6 +7,31 @@
   <version>1.0-SNAPSHOT</version>
   <name>MavenHelloWorldProject</name>
   <url>http://maven.apache.org</url>
+  <build>
+        <plugins>
+            <plugin>
+                <groupId>com.xebialabs.xldeploy</groupId>
+                <artifactId>xldeploy-maven-plugin</artifactId>
+                <version>6.0.0</version>
+
+                <extensions>true</extensions> <!-- tells maven the plugin contains extensions -->
+
+                <configuration>
+                    <deployables>
+
+                        <deployable>
+                            <name>MavenHelloWorldProject</name>
+                            <type>jee.Jar</type>
+                            <groupId>com.jcg.maven</groupId>
+                            <artifactId>MavenHelloWorldProject</artifactId>
+                        </deployable>
+
+                    </deployables>
+                </configuration>
+            </plugin>
+        </plugins>
+    </build>
+  
   <dependencies>
     <dependency>
       <groupId>junit</groupId>
