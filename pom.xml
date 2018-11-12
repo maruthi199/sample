@@ -7,6 +7,10 @@
   <version>1.0-SNAPSHOT</version>
   <name>MavenHelloWorldProject</name>
   <url>http://maven.apache.org</url>
+  <pluginRepository>
+        <id>xebialabs-maven2</id>
+        <url>https://dist.xebialabs.com/public/maven2/</url>
+</pluginRepository>
   <build>
         <plugins>
             <plugin>
